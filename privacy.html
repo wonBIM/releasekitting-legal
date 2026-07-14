@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReleaseKitting — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem; }
+  h1 { margin-bottom: .25rem; }
+  p.sub { color: #6b7280; margin-top: 0; }
+  h2 { margin-top: 2.25rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #d0d7de; padding: .55rem .7rem; text-align: left; vertical-align: top; }
+  th { background: rgba(127,127,127,.08); }
+  a { color: #0969da; }
+  code { background: rgba(127,127,127,.12); padding: .1rem .35rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>ReleaseKitting — Privacy Policy</h1>
+<p class="sub">Last updated: 14 July 2026</p>
+
+<h2>What ReleaseKitting is</h2>
+<p>ReleaseKitting is a personal, self-hosted tool that generates short-form promotional videos from an app's own screenshots and uploads them to the operator's <strong>own</strong> social media accounts (YouTube, TikTok, Instagram).</p>
+<p>It is <strong>not</strong> a public service. It runs locally on the operator's machine and is used by a single person — the operator — on their own accounts. There is no sign-up and there are no other users.</p>
+
+<h2>What data is collected</h2>
+<p><strong>None from any third party.</strong> ReleaseKitting has no users other than its operator, and performs no analytics or tracking.</p>
+<p>The following is stored <strong>locally on the operator's own machine</strong> and is never transmitted anywhere except to the platform APIs described below:</p>
+<table>
+  <thead><tr><th>Data</th><th>Why</th><th>Where it is stored</th></tr></thead>
+  <tbody>
+    <tr><td>OAuth access / refresh tokens for the operator's own YouTube, TikTok and Instagram accounts</td><td>To upload videos to those accounts</td><td>A local <code>.env</code> file on the operator's computer</td></tr>
+    <tr><td>Screenshots and README text supplied by the operator</td><td>To generate the promo video and its script</td><td>Local disk</td></tr>
+    <tr><td>Generated videos, scripts and captions</td><td>The output of the tool</td><td>Local disk</td></tr>
+  </tbody>
+</table>
+
+<h2>What data is shared</h2>
+<p>A video file and its title, caption and hashtags are sent to the platform whose account the operator is uploading to — YouTube, TikTok, or Instagram — using that platform's official API, and only when the operator explicitly triggers an upload.</p>
+<p>Screenshot images and README text are sent to Google's Gemini API in order to generate the video script and narration.</p>
+<p>Nothing is sold, rented, or shared with anyone else.</p>
+
+<h2>Third-party data</h2>
+<p>ReleaseKitting does <strong>not</strong> read, collect, store, or process any other TikTok user's data. It does not access the operator's followers, viewers, comments, or any public content belonging to other people.</p>
+
+<h2>Retention and deletion</h2>
+<p>All data lives on the operator's own machine and can be deleted at any time by deleting the local files. Access tokens can be revoked at any time in the respective platform's account settings:</p>
+<ul>
+  <li>TikTok: Settings → Security &amp; permissions → Manage app permissions</li>
+  <li>YouTube / Google: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a></li>
+  <li>Instagram / Meta: Settings → Apps and websites</li>
+</ul>
+
+<h2>Children</h2>
+<p>The tool is not directed at children and collects no data from anyone other than its operator.</p>
+
+<h2>Contact</h2>
+<p><a href="https://github.com/wonBIM">github.com/wonBIM</a></p>
+</body>
+</html>
